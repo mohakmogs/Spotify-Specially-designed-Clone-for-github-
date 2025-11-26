@@ -1,20 +1,50 @@
 
 // --- Static song list ---
 
-const songs = [
-  "songs/ls/Dooron Dooron.mp3",
-  "songs/ls/Suroor.mp3",
-  "songs/ls/Valam.mp3"
+const admin = [
+  "playlist/admin/Kaise Ab Kahe.mp3",
+  "playlist/admin/Jhoom (R&B mix).mp3"
+  
   // Add more song paths as needed
 ];
-const songs2 = [
-  "songs/old/Aabaad Barbaad.mp3",
-  "songs/old/Aasan Nahin Yahan Aashiqui.mp3",
-  "songs/old/Pehli Dafa.mp3"
+const english = [
+  "playlist/english/I Wanna Be Yours.mp3",
+  
+  // Add more song paths as needed
+];
+const arijit = [
+  "playlist/arijit/Rangdaari.mp3",
+  
+  // Add more song paths as needed
+];
+const aditiya = [
+  "playlist/aditya/Sunn Mere Yaar Ve.mp3",
+  "playlist/aditya/Suroor.mp3",
+  
+  // Add more song paths as needed
+];
+const taylor = [
+  "playlist/taylor/Taylor Swift - august (Lyrics).mp3",
+  
+  // Add more song paths as needed
+];
+const dhh = [
+  "playlist/dhh/Luka Chippi.mp3",
+  
+  // Add more song paths as needed
+];
+const gym = [
+  "playlist/gym/TE CONOCÍ - Super Slowed.mp3",
+ 
+  // Add more song paths as needed
+];
+const sad = [
+  "playlist/sad/Jiyein Kyun.mp3",
+ 
   // Add more song paths as needed
 ];
 
-let activeSongs = songs;
+let activeSongs = admin;
 let currentSongIndex = 0;
 let currentsong = new Audio(activeSongs[currentSongIndex]);
 
@@ -180,9 +210,21 @@ window.addEventListener('DOMContentLoaded', () => {
       const cards = Array.from(cardContainer.querySelectorAll('.cards'));
       const cardIndex = cards.indexOf(card);
       if (cardIndex === 0) {
-        activeSongs = songs;
+        activeSongs = admin;
       } else if (cardIndex === 1) {
-        activeSongs = songs2;
+        activeSongs = english;
+      } else if (cardIndex === 2) {
+        activeSongs = arijit;
+      } else if (cardIndex === 3) {
+        activeSongs = aditiya;
+      } else if (cardIndex === 4) {
+        activeSongs = taylor;
+      } else if (cardIndex === 5) {
+        activeSongs = dhh;
+      } else if (cardIndex === 6) {
+        activeSongs = gym;
+      } else if (cardIndex === 7) {
+        activeSongs = sad;
       } else {
         return;
       }
@@ -277,14 +319,18 @@ window.addEventListener('DOMContentLoaded', () => {
   currentsong.addEventListener('pause', removePlayerAnimationCSS);
 });
 document.querySelector(".close").addEventListener('click', (e) => {
-    document.querySelector(".left").style.left = "-120%";
-    document.querySelector(".left").style.transition = "left 1.5s ease 0.05s";
-  });
-  document.querySelector(".hamburger").addEventListener('click', (e) => {
-    document.querySelector(".left").style.left = "0%";
-    document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
-  });
-  document.querySelector("ul li:first-child").addEventListener('click', (e) => {
-    document.querySelector(".left").style.left = "-120%";
-    document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
-  });
+  document.querySelector(".left").style.left = "-120%";
+  document.querySelector(".left").style.transition = "left 1.5s ease 0.05s";
+});
+document.querySelector(".hamburger").addEventListener('click', (e) => {
+  document.querySelector(".left").style.left = "0%";
+  document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
+});
+document.querySelector("ul li:first-child").addEventListener('click', (e) => {
+  document.querySelector(".left").style.left = "-120%";
+  document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
+});
+document.querySelector('.card-container').addEventListener('click', async (e) => {
+  document.querySelector(".left").style.left = "0%";
+  document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
+});
