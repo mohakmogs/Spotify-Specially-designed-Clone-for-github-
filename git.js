@@ -3,46 +3,51 @@
 
 const admin = [
   "playlist/admin/Kaise Ab Kahe.mp3",
-  "playlist/admin/Jhoom (R&B mix).mp3",
-  "playlist/admin/Jaane na tu.mp3"
-  
+  "playlist/admin/Jhoom (R&B mix).mp3"
+
   // Add more song paths as needed
 ];
 const english = [
   "playlist/english/I Wanna Be Yours.mp3",
-  
+
   // Add more song paths as needed
 ];
 const arijit = [
   "playlist/arijit/Rangdaari.mp3",
-  "playlist/arijit/Samjhawan.mp3",
-  
+
   // Add more song paths as needed
 ];
 const aditiya = [
   "playlist/aditya/Sunn Mere Yaar Ve.mp3",
   "playlist/aditya/Suroor.mp3",
-  
+
   // Add more song paths as needed
 ];
 const taylor = [
   "playlist/taylor/Taylor Swift - august (Lyrics).mp3",
-  
+
   // Add more song paths as needed
 ];
 const dhh = [
   "playlist/dhh/Luka Chippi.mp3",
-  
+
   // Add more song paths as needed
 ];
 const gym = [
   "playlist/gym/TE CONOCÍ - Super Slowed.mp3",
- 
+
   // Add more song paths as needed
 ];
 const sad = [
   "playlist/sad/Jiyein Kyun.mp3",
- 
+
+  // Add more song paths as needed
+];
+const yoyo = [
+  "playlist/yo yo/Brown Rang.mp3",
+  
+  "playlist/yo yo/Call Aundi.mp3",
+
   // Add more song paths as needed
 ];
 
@@ -227,7 +232,10 @@ window.addEventListener('DOMContentLoaded', () => {
         activeSongs = gym;
       } else if (cardIndex === 7) {
         activeSongs = sad;
-      } else {
+      } else if (cardIndex === 8) {
+        activeSongs = yoyo;
+      }
+      else {
         return;
       }
       currentSongIndex = 0;
@@ -335,5 +343,4 @@ document.querySelector("ul li:first-child").addEventListener('click', (e) => {
 document.querySelector('.card-container').addEventListener('click', async (e) => {
   document.querySelector(".left").style.left = "0%";
   document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
-
 });
