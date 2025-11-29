@@ -4,6 +4,7 @@
 const admin = [
   "playlist/admin/Kaise Ab Kahe.mp3",
   "playlist/admin/Jhoom (R&B mix).mp3"
+  "playlist/admin/Jaane na tu.mp3",
 
   // Add more song paths as needed
 ];
@@ -14,6 +15,7 @@ const english = [
 ];
 const arijit = [
   "playlist/arijit/Rangdaari.mp3",
+  "playlist/arijit/Samjhawan",
 
   // Add more song paths as needed
 ];
@@ -343,4 +345,5 @@ document.querySelector("ul li:first-child").addEventListener('click', (e) => {
 document.querySelector('.card-container').addEventListener('click', async (e) => {
   document.querySelector(".left").style.left = "0%";
   document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
+
 });
