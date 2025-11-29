@@ -32,6 +32,7 @@ const taylor = [
 ];
 const dhh = [
   "playlist/dhh/Luka Chippi.mp3",
+  "playlist/dhh/AKKI - Banger No.34.mp3",
 
   // Add more song paths as needed
 ];
@@ -347,5 +348,6 @@ document.querySelector('.card-container').addEventListener('click', async (e) =>
   document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
 
 });
+
 
 
