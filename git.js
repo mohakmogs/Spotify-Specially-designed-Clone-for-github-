@@ -22,6 +22,7 @@ const arijit = [
 const aditiya = [
   "playlist/aditya/Sunn Mere Yaar Ve.mp3",
   "playlist/aditya/Suroor.mp3",
+  "playlist/aditya/Sahiba Lyrics - Aditya Rikhari saahiba, aaye ghar kaahe na.mp3",
 
   // Add more song paths as needed
 ];
@@ -349,6 +350,7 @@ document.querySelector('.card-container').addEventListener('click', async (e) =>
   document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
 
 });
+
 
 
 
