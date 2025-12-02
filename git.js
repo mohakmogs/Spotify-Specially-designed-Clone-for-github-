@@ -41,6 +41,7 @@ const dhh = [
 const gym = [
   "playlist/gym/TE CONOCÍ - Super Slowed.mp3",
   "playlist/gym/CONFESS YOUR LOVE FUNK (Slowed).mp3",
+  "playlist/gym/Heroine (slowed).mp3",
 
   // Add more song paths as needed
 ];
@@ -351,6 +352,7 @@ document.querySelector('.card-container').addEventListener('click', async (e) =>
   document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
 
 });
+
 
 
 
