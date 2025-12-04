@@ -47,6 +47,7 @@ const gym = [
 ];
 const sad = [
   "playlist/sad/Jiyein Kyun.mp3",
+  "playlist/sad/Dekha Hi Nahi.mp3
 
   // Add more song paths as needed
 ];
@@ -352,6 +353,7 @@ document.querySelector('.card-container').addEventListener('click', async (e) =>
   document.querySelector(".left").style.transition = "left 0.75s ease 0.05s";
 
 });
+
 
 
 
